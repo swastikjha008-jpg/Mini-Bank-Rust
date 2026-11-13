@@ -1,0 +1,19 @@
+[package]
+name = "mini-bank"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.75"
+description = "A tiny bank simulator for learning Rust: structs, enums, borrowing, Result and Option."
+authors = ["swastikjha008-jpg"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/swastikjha008-jpg/mini-bank"
+keywords = ["bank", "cli", "learning", "rust-basics", "repl"]
+categories = ["command-line-utilities"]
+
+[dependencies]
+
+[profile.release]
+lto = true
+codegen-units = 1
+strip = true
